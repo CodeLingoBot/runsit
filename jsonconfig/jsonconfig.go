@@ -26,7 +26,7 @@ import (
 // Obj is a JSON configuration map.
 type Obj map[string]interface{}
 
-// Reads json config data from the specified open file, expanding
+// ReadFile reads json config data from the specified open file, expanding
 // all expressions
 func ReadFile(configPath string) (Obj, error) {
 	var c configParser
